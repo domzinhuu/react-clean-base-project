@@ -2,6 +2,10 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Node 14",
   "extends": "@tsconfig/node14/tsconfig.json",
+  "include": [
+    "src"
+  ],
+  "exclude": [],
   "compilerOptions": {
     "target": "es5",
     "lib": [
@@ -9,6 +13,8 @@
       "dom.iterable",
       "esnext"
     ],
+    "rootDir": "src",
+    "baseUrl": "src",
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -21,9 +27,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
-  },
-  "include": [
-    "src"
-  ]
+    "jsx": "react"
+  }
 }
