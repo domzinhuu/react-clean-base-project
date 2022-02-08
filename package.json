@@ -6,9 +6,9 @@
   "scripts": {
     "lint-staged": "lint-staged",
     "test": "jest --passWithNoTests",
-    "test:watch": "npm jest -- --watch",
-    "test:staged": "npm jest -- --findRelatedTests",
-    "test:ci": "npm jest -- coverage",
+    "test:watch": "npm run test -- --watch",
+    "test:staged": "npm run test -- --findRelatedTests",
+    "test:ci": "npm run test -- coverage",
     "prepare": "husky install"
   },
   "keywords": [],
