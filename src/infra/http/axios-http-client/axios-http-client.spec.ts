@@ -1,8 +1,7 @@
-import faker from '@faker-js/faker'
 import { AxiosHttpClient } from './axios-http-client'
-import { HttpPostParams } from '@/data/protocols/http'
 import { mockAxios } from '@/infra/test'
 import axios from 'axios'
+import { mockPostRequest } from '@/data/test'
 
 jest.mock('axios')
 
@@ -19,8 +18,6 @@ const makeSut = (): SutTypes => {
     mockedAxios
   }
 }
-
-const mockPostRequest = (): HttpPostParams<any> => ({ url: faker.internet.url(), body: faker.random.arrayElement() })
 
 describe('AxiosHttpClient', () => {
   test('Deve chamar o axios com os valores correto ', async () => {
