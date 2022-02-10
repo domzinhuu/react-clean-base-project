@@ -13,7 +13,7 @@ const Login: React.FC = () => {
         <h1>Poc teste app reactJS</h1>
       </header>
       <form className={Styles.form}>
-        <h2>Login</h2>
+        <h2>Login:</h2>
         <div className={Styles.inputWrap}>
           <input type="email" name="email" placeholder="Digite seu e-mail" />
           <span className={Styles.status}>🔴</span>
