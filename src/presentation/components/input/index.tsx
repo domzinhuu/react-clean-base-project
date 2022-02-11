@@ -7,9 +7,13 @@ type Props = React.DetailedHTMLProps<
 >
 
 const Footer: React.FC<Props> = (props: Props) => {
+  const enabledInput = (evt: React.FocusEvent<HTMLInputElement>): void => {
+    evt.target.readOnly = false
+  }
+
   return (
     <div className={Styles.inputWrap}>
-      <input {...props} />
+      <input {...props} readOnly onFocus={enabledInput} />
       <span className={Styles.status}>🔴</span>
     </div>
   )
