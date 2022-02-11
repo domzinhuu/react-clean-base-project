@@ -74,19 +74,5 @@ button {
       }
     }
 
-    .errorWrap {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      .spinnerLoad {
-        margin-top: 30px;
-      }
-
-      .error {
-        margin-top: 30px;
-        color: $primaryLight;
-      }
-    }
   }
 }
