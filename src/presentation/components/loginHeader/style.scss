@@ -3,7 +3,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  border-top: 40px solid $primaryDark;
+  border-top: 20px solid $primaryDark;
   align-items: center;
   background-color: $primary;
 
@@ -13,6 +13,6 @@
 
   h1 {
     color: $white;
-    margin: 16px 0px 40px;
+    margin: 16px 0px 20px;
   }
 }
