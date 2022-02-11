@@ -1,4 +1,5 @@
 import LoginHeader from '@/presentation/components/loginHeader'
+import Footer from '@/presentation/components/footer'
 import Spinner from '@/presentation/components/spinner'
 import React from 'react'
 import Styles from './style.scss'
@@ -33,7 +34,7 @@ const Login: React.FC = () => {
           <span className={Styles.error}>Error</span>
         </div>
       </form>
-      <footer className={Styles.footer}></footer>
+      <Footer />
     </div>
   )
 }
