@@ -1,5 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Login from '@/presentation/pages/login'
+import { LoginPage } from '@/presentation/pages'
 
-ReactDOM.render(<Login />, document.getElementById('main'))
+ReactDOM.render(<LoginPage />, document.getElementById('main'))

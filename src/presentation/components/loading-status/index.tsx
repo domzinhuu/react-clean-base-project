@@ -2,7 +2,7 @@ import React from 'react'
 import Spinner from '../spinner'
 import Styles from './style.scss'
 
-const LoadStatus: React.FC = () => {
+const LoadingStatus: React.FC = () => {
   return (
     <div className={Styles.errorWrap}>
       <Spinner className={Styles.spinnerLoad} />
@@ -11,4 +11,4 @@ const LoadStatus: React.FC = () => {
   )
 }
 
-export default LoadStatus
+export default LoadingStatus
