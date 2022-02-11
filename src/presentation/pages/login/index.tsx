@@ -1,23 +1,35 @@
-import { Footer, Input, LoadingStatus, LoginHeader } from '@/presentation/components'
+import {
+  Footer,
+  Input,
+  LoadingStatus,
+  LoginHeader
+} from '@/presentation/components'
+import { FormProvider } from '@/presentation/contexts/form-context'
 import React from 'react'
 import Styles from './style.scss'
 
 const Login: React.FC = () => {
   return (
-    <div className={Styles.login}>
+    <div role="container" className={Styles.login}>
       <LoginHeader />
-      <form className={Styles.form}>
-        <h2>Login:</h2>
-        <Input type="email" name="email" placeholder="Digite seu e-mail" />
-        <Input type="password" name="password" placeholder="Digite sua senha" />
+      <FormProvider>
+        <form className={Styles.form}>
+          <h2>Login:</h2>
+          <Input type="email" name="email" placeholder="Digite seu e-mail" />
+          <Input
+            type="password"
+            name="password"
+            placeholder="Digite sua senha"
+          />
 
-        <button className={Styles.submit} type="submit">
-          Entrar
-        </button>
-        <span className={Styles.link}>Criar conta</span>
+          <button className={Styles.submit} type="submit">
+            Entrar
+          </button>
+          <span className={Styles.link}>Criar conta</span>
 
-        <LoadingStatus />
-      </form>
+          <LoadingStatus />
+        </form>
+      </FormProvider>
       <Footer />
     </div>
   )
