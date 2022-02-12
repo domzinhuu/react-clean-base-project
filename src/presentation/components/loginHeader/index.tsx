@@ -4,7 +4,7 @@ import Logo from '../logo'
 
 const LoginHeader: React.FC = () => {
   return (
-    <header className={Styles.header}>
+    <header title='Heading' className={Styles.header}>
       <Logo />
       <h1>Poc teste app reactJS</h1>
     </header>

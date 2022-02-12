@@ -13,19 +13,41 @@ const Login: React.FC = () => {
     <div role="container" className={Styles.login}>
       <LoginHeader />
       <FormProvider>
-        <form className={Styles.form}>
+        <form
+          title="formulário de login"
+          name="loginForm"
+          className={Styles.form}
+        >
           <h2>Login:</h2>
-          <Input type="email" name="email" placeholder="Digite seu e-mail" />
+          <Input
+            type="email"
+            name="email"
+            title="digite seu email"
+            placeholder="Digite seu e-mail"
+          />
           <Input
             type="password"
             name="password"
+            title="digite sua senha"
             placeholder="Digite sua senha"
           />
 
-          <button disabled className={Styles.submit} type="submit">
+          <button
+            name="login-button"
+            disabled
+            className={Styles.submit}
+            type="submit"
+          >
             Entrar
           </button>
-          <span className={Styles.link}>Criar conta</span>
+          <span
+            role="button"
+            aria-label="createAccount"
+            title="Criar nova conta."
+            className={Styles.link}
+          >
+            Criar conta
+          </span>
 
           <LoadingStatus />
         </form>
