@@ -8,7 +8,7 @@ const LoadingStatus: React.FC = () => {
   return (
     <div role="error-wrapper" className={Styles.errorWrap}>
       {isLoading ?? <Spinner className={Styles.spinnerLoad} />}
-      {errorMessage ?? <span className={Styles.error}>Error</span>}
+      {errorMessage ?? <span className={Styles.error}>{errorMessage}</span>}
     </div>
   )
 }

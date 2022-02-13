@@ -20,12 +20,14 @@ const Login: React.FC = () => {
         >
           <h2>Login:</h2>
           <Input
+            id="login-email"
             type="email"
             name="email"
             title="digite seu email"
-            placeholder="Digite seu e-mail"
+            placeholder="Digite seu email"
           />
           <Input
+            id="login-password"
             type="password"
             name="password"
             title="digite sua senha"
